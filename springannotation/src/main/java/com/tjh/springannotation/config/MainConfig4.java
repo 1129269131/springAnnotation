@@ -16,10 +16,10 @@ public class MainConfig4 {
 
     //默认是单实例的
     /**
-     * ConfigurableBeanFactory#SCOPE_PROTOTYPE
-     * ConfigurableBeanFactory#SCOPE_SINGLETON
-     * org.springframework.web.context.WebApplicationContext#SCOPE_REQUEST  request
-     * org.springframework.web.context.WebApplicationContext#SCOPE_SESSION	 sesssion
+     * ConfigurableBeanFactory#SCOPE_PROTOTYPE  prototype
+     * ConfigurableBeanFactory#SCOPE_SINGLETON  singleton
+     * WebApplicationContext#SCOPE_REQUEST  request
+     * WebApplicationContext#SCOPE_SESSION	sesssion
      *
      * @Scope:调整作用域
      * prototype：多实例的：ioc容器启动并不会去调用方法创建对象放在容器中。
