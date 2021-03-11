@@ -1,5 +1,6 @@
 package com.tjh.springannotation;
 
+import com.tjh.springannotation.bean.Car;
 import com.tjh.springannotation.config.MainConfigOfLifeCycle;
 import com.tjh.springannotation.config.MainConfigOfLifeCycle2;
 import org.junit.jupiter.api.Test;
@@ -17,7 +18,9 @@ public class IOCTest_LifeCycleDay11 {
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MainConfigOfLifeCycle.class);
         System.out.println("容器创建完成...");
 
-        //applicationContext.getBean("car");
+        Car car1 = (Car) applicationContext.getBean("car");
+        Car car2 = (Car) applicationContext.getBean("car");
+        System.out.println(car1 == car2);
         //关闭容器
         applicationContext.close();
     }

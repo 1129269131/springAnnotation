@@ -1,6 +1,5 @@
 package com.tjh.springannotation.config;
 
-import com.tjh.springannotation.bean.Person;
 import com.tjh.springannotation.bean.Person2;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

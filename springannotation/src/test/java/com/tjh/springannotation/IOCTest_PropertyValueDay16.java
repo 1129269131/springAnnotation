@@ -1,6 +1,5 @@
 package com.tjh.springannotation;
 
-import com.tjh.springannotation.bean.Person;
 import com.tjh.springannotation.bean.Person2;
 import com.tjh.springannotation.config.MainConfigOfPropertyValues;
 import org.junit.jupiter.api.Test;

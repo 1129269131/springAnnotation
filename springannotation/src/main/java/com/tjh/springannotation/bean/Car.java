@@ -2,7 +2,7 @@ package com.tjh.springannotation.bean;
 
 /**
  * Create by koala on 2021-03-10
- * day11：
+ * day11
  */
 public class Car {
 
@@ -15,7 +15,7 @@ public class Car {
     }
 
     public void destroy(){
-        System.out.println("car ... detory...");
+        System.out.println("car ... destroy...");
     }
 
 }
