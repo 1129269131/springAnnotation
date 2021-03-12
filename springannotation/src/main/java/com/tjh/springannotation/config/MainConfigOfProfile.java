@@ -26,11 +26,11 @@ import javax.sql.DataSource;
  *
  * 1）、加了环境标识的bean，只有这个环境被激活的时候才能注册到容器中。默认是default环境
  * 2）、写在配置类上，只有是指定的环境的时候，整个配置类里面的所有配置才能开始生效
- * 3）、没有标注环境标识的bean在，任何环境下都是加载的；
+ * 3）、没有标注环境标识的bean在，任何环境下都是加载的
  *
  */
 @Profile("test")
-@PropertySource("classpath:/dbconfig.properties")
+@PropertySource("classpath:/dbconfigDay22.properties")
 @Configuration
 public class MainConfigOfProfile implements EmbeddedValueResolverAware {
 
@@ -41,11 +41,11 @@ public class MainConfigOfProfile implements EmbeddedValueResolverAware {
 
     private String  driverClass;
 
-    /*@Profile("default")
+    @Profile("test")
     @Bean
     public Yellow yellow(){
         return new Yellow();
-    }*/
+    }
 
     @Profile("test")
     @Bean("testDataSource")

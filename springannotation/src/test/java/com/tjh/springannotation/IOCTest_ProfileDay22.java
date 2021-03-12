@@ -15,7 +15,10 @@ import javax.activation.DataSource;
  */
 public class IOCTest_ProfileDay22 {
 
-    //方式一：使用命令行动态参数: 在虚拟机参数位置加载 -Dspring.profiles.active=test
+    /**
+     * 方式一：使用命令行动态参数: 在虚拟机参数位置加载 -Dspring.profiles.active=test
+     * IDEA中：右上角，项目运行菜单 --》Edit Configurations... --》VM options --》输入：-Dspring.profiles.active=test --》Apply --》OK --》运行
+     */
     @Test
     public void test01(){
         AnnotationConfigApplicationContext applicationContext =
@@ -26,8 +29,8 @@ public class IOCTest_ProfileDay22 {
             System.out.println(string);
         }
 
-        /*Yellow bean = applicationContext.getBean(Yellow.class);
-        System.out.println(bean);*/
+        Yellow bean = applicationContext.getBean(Yellow.class);
+        System.out.println(bean);
         applicationContext.close();
     }
 
@@ -45,12 +48,12 @@ public class IOCTest_ProfileDay22 {
         applicationContext.refresh();
 
         String[] namesForType = applicationContext.getBeanNamesForType(DataSource.class);
-        for (String string : namesForType) {
-            System.out.println(string);
+        for (String name : namesForType) {
+            System.out.println(name);
         }
 
-        /*Yellow bean = applicationContext.getBean(Yellow.class);
-        System.out.println(bean);*/
+        Yellow bean = applicationContext.getBean(Yellow.class);
+        System.out.println(bean);
         applicationContext.close();
     }
 
