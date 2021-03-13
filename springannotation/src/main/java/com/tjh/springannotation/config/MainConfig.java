@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration  //告诉Spring这是一个配置类
 public class MainConfig {
 
-    //给容器中注册一个Bean;类型为返回值的类型，id默认是用方法名作为id
+    //给容器中注册一个Bean;类型为返回值的类型，默认是用方法名作为id
     @Bean("person01")
     public Person person(){
         return new Person("lisi", 20);

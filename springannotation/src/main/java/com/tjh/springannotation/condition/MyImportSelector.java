@@ -14,7 +14,6 @@ public class MyImportSelector implements ImportSelector {
     //AnnotationMetadata:当前标注@Import注解的类的所有注解信息
     @Override
     public String[] selectImports(AnnotationMetadata importingClassMetadata) {
-        // TODO Auto-generated method stub
         //importingClassMetadata
         //方法不要返回null值
         return new String[]{"com.tjh.springannotation.bean.Blue","com.tjh.springannotation.bean.Yellow"};
