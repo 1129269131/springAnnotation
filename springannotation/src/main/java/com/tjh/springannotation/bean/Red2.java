@@ -9,8 +9,10 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.StringValueResolver;
 
 /**
+ * day21：
+ *      自动装配-Aware注入Spring底层组件&原理
+ *
  * Create by koala on 2021-03-11
- * day21
  */
 @Component
 public class Red2 implements ApplicationContextAware, BeanNameAware, EmbeddedValueResolverAware {

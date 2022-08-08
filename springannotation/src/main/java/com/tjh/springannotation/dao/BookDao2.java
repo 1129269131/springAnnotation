@@ -3,8 +3,8 @@ package com.tjh.springannotation.dao;
 import org.springframework.stereotype.Repository;
 
 /**
- * Create by koala on 2021-03-11
  * day17
+ * Create by koala on 2021-03-11
  */
 //名字默认是类名首字母小写
 @Repository

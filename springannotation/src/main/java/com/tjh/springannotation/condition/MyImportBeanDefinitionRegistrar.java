@@ -7,9 +7,10 @@ import org.springframework.context.annotation.ImportBeanDefinitionRegistrar;
 import org.springframework.core.type.AnnotationMetadata;
 
 /**
- * Create by koala on 2021-03-09
  * day09：
- *    ImportBeanDefinitionRegistrar:手动注册bean到容器中
+ *    ImportBeanDefinitionRegistrar：手动注册bean到容器中
+ *
+ * Create by koala on 2021-03-09
  */
 public class MyImportBeanDefinitionRegistrar implements ImportBeanDefinitionRegistrar {
 
@@ -30,6 +31,7 @@ public class MyImportBeanDefinitionRegistrar implements ImportBeanDefinitionRegi
             //注册一个Bean，指定bean名
             registry.registerBeanDefinition("rainBow", beanDefinition);
         }
+
     }
 
 }

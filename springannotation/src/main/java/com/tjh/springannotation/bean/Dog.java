@@ -6,11 +6,15 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 /**
- * Create by koala on 2021-03-10
  * day13：
- * 可以使用JSR250；
- *  	@PostConstruct：在bean创建完成并且属性赋值完成；来执行初始化方法
- *   	@PreDestroy：在容器销毁bean之前通知我们进行清理工作
+ *      生命周期-@PostConstruct&@PreDestroy
+ *
+ *      说明：
+ *          可以使用JSR250；
+ *  	        @PostConstruct：在bean创建完成并且属性赋值完成；来执行初始化方法
+ *   	        @PreDestroy：在容器销毁bean之前通知我们进行清理工作
+ *
+ * Create by koala on 2021-03-10
  */
 @Component
 public class Dog {

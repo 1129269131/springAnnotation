@@ -1,8 +1,9 @@
 package com.tjh.springannotation.bean;
 
 /**
- * Create by koala on 2021-03-10
  * day11
+ *
+ * Create by koala on 2021-03-10
  */
 public class Car {
 

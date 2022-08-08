@@ -9,10 +9,14 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 /**
- * Create by koala on 2021-03-10
  * day15：
- * Spring底层对 BeanPostProcessor 的使用；
- * 		bean赋值，注入其他组件，@Autowired，生命周期注解功能，@Async,xxx BeanPostProcessor;
+ *      生命周期-BeanPostProcessor在Spring底层的使用
+ *
+ *      说明：
+ *          Spring底层对 BeanPostProcessor 的使用；
+ * 		        bean赋值，注入其他组件，@Autowired，生命周期注解功能，@Async,xxx BeanPostProcessor;
+ *
+ * Create by koala on 2021-03-10
  */
 @Component
 public class Dog2 implements ApplicationContextAware {

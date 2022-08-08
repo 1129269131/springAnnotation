@@ -6,8 +6,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.FilterType;
 
 /**
- * Create by koala on 2021-03-08
  * day03
+ * Create by koala on 2021-03-08
  */
 @Configuration
 @ComponentScans(
@@ -18,5 +18,4 @@ import org.springframework.context.annotation.FilterType;
         }
 )
 public class MainConfig3 {
-
 }

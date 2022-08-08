@@ -8,12 +8,15 @@ import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * Create by koala on 2021-03-09
  * day06：
- * @Conditional({Condition}) ： 按照一定的条件进行判断，满足条件给容器中注册bean
+ *      组件注册-@Conditional-按照条件注册bean
  *
- * 如果系统是windows，给容器中注册("bill")
- * 如果是linux系统，给容器中注册("linus")
+ *      说明：
+ *          @Conditional({Condition})：按照一定的条件进行判断，满足条件给容器中注册bean
+ *              1、如果系统是windows，给容器中注册("bill")
+ *              2、如果是linux系统，给容器中注册("linus")
+ *
+ * Create by koala on 2021-03-09
  */
 @Conditional({WindowsCondition.class})//类中组件统一设置。满足当前条件，这个类中配置的所有bean注册才能生效；
 @Configuration

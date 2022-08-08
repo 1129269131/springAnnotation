@@ -6,9 +6,10 @@ import org.springframework.core.env.Environment;
 import org.springframework.core.type.AnnotatedTypeMetadata;
 
 /**
- * Create by koala on 2021-03-09
  * day06：
- *  判断是否windows系统
+ *      判断是否windows系统
+ *
+ * Create by koala on 2021-03-09
  */
 public class WindowsCondition implements Condition {
 

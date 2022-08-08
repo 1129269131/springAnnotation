@@ -6,8 +6,10 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 
 /**
+ * day18：
+ *      自动装配-@Resource&@Inject
+ *
  * Create by koala on 2021-03-11
- * day18
  */
 @Service
 public class BookService3 {

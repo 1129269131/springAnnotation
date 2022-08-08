@@ -6,8 +6,10 @@ import org.springframework.stereotype.Service;
 import javax.inject.Inject;
 
 /**
+ * day19：
+ *      自动装配-@Resource&@Inject
+ *
  * Create by koala on 2021-03-11
- * day19
  */
 @Service
 public class BookService4 {

@@ -1,8 +1,8 @@
 package com.tjh.springannotation.bean;
 
 /**
- * Create by koala on 2021-03-08
  * day01
+ * Create by koala on 2021-03-08
  */
 public class Person {
 

@@ -7,8 +7,8 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * Create by koala on 2021-03-11
  * day20
+ * Create by koala on 2021-03-11
  */
 @Configuration
 @ComponentScan({"com.tjh.springannotation.bean"})

@@ -1,8 +1,8 @@
 package com.tjh.springannotation.bean;
 
 /**
- * Create by koala on 2021-03-11
  * day20
+ * Create by koala on 2021-03-11
  */
 public class Color2 {
 

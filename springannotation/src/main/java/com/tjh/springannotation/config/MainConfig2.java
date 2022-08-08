@@ -8,8 +8,21 @@ import org.springframework.context.annotation.FilterType;
 import org.springframework.stereotype.Controller;
 
 /**
+ * day02：
+ *      组件注册-@ComponentScan-自动扫描组件&指定扫描规则
+ *
+ *      说明：
+ *          excludeFilters = Filter[] ：指定扫描的时候按照什么规则排除哪些组件
+ *          includeFilters = Filter[] ：指定扫描的时候只需要包含哪些组件
+ *
+ *          FilterType：
+ *              FilterType.ANNOTATION：按照注解
+ *              FilterType.ASSIGNABLE_TYPE：按照给定的类型；
+ *              FilterType.ASPECTJ：使用ASPECTJ表达式
+ *              FilterType.REGEX：使用正则指定
+ *              FilterType.CUSTOM：使用自定义规则
+ *
  * Create by koala on 2021-03-08
- * day02
  */
 @Configuration
 //@ComponentScan(value = "com.tjh")//指定要扫描的包
@@ -23,14 +36,5 @@ import org.springframework.stereotype.Controller;
                 }, useDefaultFilters = false)//useDefaultFilters：是否使用默认过滤规则
         }
 )
-
-//excludeFilters = Filter[] ：指定扫描的时候按照什么规则排除那些组件
-//includeFilters = Filter[] ：指定扫描的时候只需要包含哪些组件
-//FilterType.ANNOTATION：按照注解
-//FilterType.ASSIGNABLE_TYPE：按照给定的类型；
-//FilterType.ASPECTJ：使用ASPECTJ表达式
-//FilterType.REGEX：使用正则指定
-//FilterType.CUSTOM：使用自定义规则
 public class MainConfig2 {
-
 }

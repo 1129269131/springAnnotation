@@ -3,9 +3,10 @@ package com.tjh.springannotation.bean;
 import org.springframework.beans.factory.FactoryBean;
 
 /**
- * Create by koala on 2021-03-09
  * day10：
  *   创建一个Spring定义的FactoryBean
+ *
+ * Create by koala on 2021-03-09
  */
 public class ColorFactoryBean implements FactoryBean<Color> {
 

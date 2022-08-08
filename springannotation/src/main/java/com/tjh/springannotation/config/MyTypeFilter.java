@@ -10,8 +10,10 @@ import org.springframework.core.type.filter.TypeFilter;
 import java.io.IOException;
 
 /**
+ * day03：
+ *      组件注册-自定义TypeFilter指定过滤规则
+ *
  * Create by koala on 2021-03-08
- * day03：自定义TypeFilter指定过滤规则
  */
 public class MyTypeFilter implements TypeFilter {
 
@@ -22,11 +24,12 @@ public class MyTypeFilter implements TypeFilter {
     @Override
     public boolean match(MetadataReader metadataReader, MetadataReaderFactory metadataReaderFactory)
             throws IOException {
-        // TODO Auto-generated method stub
         //获取当前类注解的信息
         AnnotationMetadata annotationMetadata = metadataReader.getAnnotationMetadata();
+
         //获取当前正在扫描的类的类信息
         ClassMetadata classMetadata = metadataReader.getClassMetadata();
+
         //获取当前类资源（类的路径）
         Resource resource = metadataReader.getResource();
 
